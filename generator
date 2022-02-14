@@ -1,44 +1,14 @@
 import random
 aa=int(input('Number of passwords:'))
 bb=int(input('paswword length:'))
-info=[]
+charachters='abcdefjhigklmnopqrstuvABVHYIOLJFFED_-&£@%' 
 for z in range(aa):
+    Code='' 
     for x in range(bb):
-        l=random.randint(x, 9)
-        info.append(l)
-       # print(info)
+        Code+=random.choice(characters)
+        
+     print(Code)
 
-lst_str=map(str,info)
-print('............')
- 
 
-print('............')
-     
-to="".join(list(lst_str))
-
-print(to)
-
-if aa==1:
     
-    print(to[:bb])
-elif aa==2:
-    print(to[:bb])
-    print(to[bb:2*bb])
-elif aa==3 :
-    print(to[:bb])
-    print(to[bb:2*bb])
-    print(to[bb+bb:3*bb])
-    
-elif aa==4 :
-    print(to[:bb])
-    print(to[bb:2*bb])
-    print(to[bb+bb:3*bb])
-    print(to[3*bb:4*bb])
-    
-elif aa==5 :
-    print(to[:bb])
-    print(to[bb:2*bb])
-    print(to[bb+bb:3*bb])
-    print(to[3*bb:4*bb])
-    print(to[4*bb:5*bb])
     
